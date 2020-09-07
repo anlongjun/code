@@ -1,0 +1,104 @@
+/**index.wxss**/
+.container1{
+  background: linear-gradient(#fff, #f1f1f1);
+  min-height: 100vh;
+}
+.seach-box{
+  margin: 30rpx;
+  border-radius: 50rpx
+}
+.seach {
+  background: #eee;
+  padding: 22rpx 0;
+  text-align: center;
+  font-size: 32rpx;
+  color: #929292;
+  border-radius: 50rpx
+}
+.bannar{
+  width: 660rpx;
+  height: 300rpx;
+  margin: 0 auto;
+}
+.bannar .img{
+  width: 100%;
+  height: 300rpx;
+}
+.guang {
+  width: 660rpx;
+  margin: 10rpx auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color:#808080;
+}
+.guang image{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 7rpx;
+  margin-right: 8rpx;
+}
+.fenlie{
+  width: 660rpx;
+  margin: 50rpx auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.fenlie image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.shaixuan{
+  width: 100%;
+  overflow-x: scroll;
+  background: #f5f5f5;
+  padding: 10rpx 0;
+}
+.scoll{
+  display: flex;
+  justify-content: space-between;
+  width: 900rpx;
+}
+
+.scoll .shai-item{
+  padding:0 30rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #808080;
+  border-right: 1px solid #ccc;
+}
+.scoll .shai-item .top{
+  font-size: 30rpx;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+.scoll .green{
+  color: #04BE02;
+}
+.scoll .green .top{
+  color: #04BE02;
+}
+.shangping{
+  width: 690rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.shangping .sp-item{
+  width: 350rpx;
+  height: 400rpx;
+  float: left;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.shangping .sp-item image{
+  width: 350rpx;
+}

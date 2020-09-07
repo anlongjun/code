@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="container1">
+  <view class='seach-box'>
+  <input class='seach' type="text" data-name="worker" value="{{worker}}" bindinput="inputChange"></input>
+  </view>
+  <view class="bannar">
+    <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item">
+            <image class='img' src='{{item}}'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+  <view class='guang'>
+    <view><image src='/images/kuai.png'></image>最快三十分钟上门</view>
+    <view><image src='/images/zhicai.png'></image>附近产地直采</view>
+    <view><image src='/images/dijia.png'></image>天天低价折扣</view>
+  </view>
+  <view class='fenlie'>
+    <view>
+      <image src='/images/item1.jpg'></image>
+      <view>时令水果</view>
+    </view>
+    <view>
+      <image src='/images/item2.jpg'></image>
+      <view>新鲜蔬菜</view>
+    </view>
+    <view>
+      <image src='/images/item3.jpg'></image>
+      <view>肉蛋水产</view>
+    </view>
+    <view>
+      <image src='/images/item4.jpg'></image>
+      <view>酒水饮料</view>
+    </view>
+    <view>
+      <image src='/images/item5.jpg'></image>
+      <view>粮油调味</view>
+    </view>
+  </view>
+  <view class='shaixuan'>
+    <view class='scoll'>
+      <view bindtap='choosefun' data-id='1' class='shai-item {{choose == 1?"green":""}}'>
+        <view class='top'>全部</view>
+        <view>精选好物</view>
+      </view>
+      <view class='shai-item {{choose == 2?"green":""}}' bindtap='choosefun' data-id='2'>
+        <view class='top'>次日计划</view>
+        <view>折上优惠</view>
+      </view>
+      <view class='shai-item {{choose == 3?"green":""}}' bindtap='choosefun' data-id='3'>
+        <view class='top'>优选水果</view>
+        <view>好吃不贵</view>
+      </view>
+      <view class='shai-item {{choose == 4?"green":""}}' bindtap='choosefun' data-id='4'>
+        <view class='top'>晚餐食材</view>
+        <view>用心挑选</view>
+      </view>
+      <view class='shai-item {{choose == 5?"green":""}}' bindtap='choosefun' data-id='5'>
+        <view class='top'>现成搭配</view>
+        <view>懒人福音</view>
+      </view>
+    </view>
+  </view>
+  <view class='shangping'>
+    <view class='sp-item'>
+      <image></image>
+      <view class='name'></view>
+      <view class='jianjie'></view>
+      <view class='jiage'>
+        <view class='prich'></view><view class='add'></view>
+      </view>
+    </view>
+  </view>
+</view>
